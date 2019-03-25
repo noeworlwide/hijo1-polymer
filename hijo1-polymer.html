@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="hijo1-polymer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `hijo1-polymer`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class Hijo1Polymer extends Polymer.Element {
+      static get is() { return 'hijo1-polymer'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'hijo1-polymer'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(Hijo1Polymer.is, Hijo1Polymer);
+  </script>
+</dom-module>
