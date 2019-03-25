@@ -1,19 +1,44 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../paper-button/paper-button.html">
 
 <dom-module id="hijo1-polymer">
   <template>
     <style>
       :host {
         display: block;
+        text-align: center;
+        padding: 10px;
+      }
+      paper-button.azul{
+        background-color: rgb(6, 141, 159);
+        color: rgb(255, 255, 255);
+      }
+      paper-button.guinda{
+        background-color: rgb(157, 37, 105);
+        color: rgb(255, 255, 255);
+      }
+      p{
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      h1{
+        text-transform: uppercase;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+
+    <section>
+      <h1>Esto es un titulo</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <paper-button evento="lista" class="azul" raised>Lista</paper-button>
+      <paper-button evento="tabla" class="guinda" raised>Tabla</paper-button>
+    </section>
+
   </template>
 
   <script>
     /**
      * `hijo1-polymer`
-     * 
+     *
      *
      * @customElement
      * @polymer
